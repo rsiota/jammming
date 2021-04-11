@@ -5,6 +5,8 @@ import SearchBar from '../SearchBar/SearchBar';
 import SearchResults from '../SearchResults/SearchResults';
 import Playlist from '../Playlist/Playlist';
 
+Spotify.getAccessToken();
+
 function App(props) {
 
   const [playlistName, setPlaylistName] = useState('My Playlist');
@@ -43,10 +45,6 @@ function App(props) {
         (x) => !tracks.some((track) => track.id === x.id));
       setSearchResults(difference);
     });
-  }
-
-  function useEffect() {
-    window.addEventListener('load', () => { Spotify.getAccessToken() });
   }
 
   return (

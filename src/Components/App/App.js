@@ -7,7 +7,7 @@ import Playlist from '../Playlist/Playlist';
 
 Spotify.getAccessToken();
 
-function App(props) {
+function App(props)  {
 
   const [playlistName, setPlaylistName] = useState('My Playlist');
   const [searchResults, setSearchResults] = useState([]);

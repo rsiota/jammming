@@ -1,6 +1,5 @@
 const clientId = 'befa3bb07f3a49f181a59133e196307a';
-// const redirectUri = 'https://rsiota.com/jammming/';
-const redirectUri = 'http://localhost:3000/';
+const redirectUri = 'https://rsiota.com/jammming/';
 let accessToken;
 
 const Spotify = {
